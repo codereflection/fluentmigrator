@@ -112,6 +112,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\System.Data.SQLite.DLL</HintPath>
     </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\SQLServerCE4\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -146,6 +150,8 @@
     <Compile Include="Generators\SqlServer2000TypeMap.cs" />
     <Compile Include="Generators\SqlServer2005TypeMap.cs" />
     <Compile Include="Generators\SqlServer2008TypeMap.cs" />
+    <Compile Include="Generators\SqlServerCeGenerator.cs" />
+    <Compile Include="Generators\SqlServerCeTypeMap.cs" />
     <Compile Include="Generators\SqlServerColumn.cs" />
     <Compile Include="Generators\TypeMapBase.cs" />
     <Compile Include="IAnnouncer.cs" />
@@ -175,6 +181,7 @@
     <Compile Include="Processors\Oracle\OracleProcessorFactory.cs" />
     <Compile Include="Processors\ProcessorFactory.cs" />
     <Compile Include="Processors\ProcessorOptions.cs" />
+    <Compile Include="Processors\SqlServer\SqlCeProcessor.cs" />
     <Compile Include="Processors\SqlServer\SqlServer2008ProcessorFactory.cs" />
     <Compile Include="Processors\SqlServer\SqlServer2005ProcessorFactory.cs" />
     <Compile Include="Processors\SqlServer\SqlServer2000ProcessorFactory.cs" />
